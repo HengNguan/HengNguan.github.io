@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import DigitalTimer1 from './components/DigitalTimer1';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -10,7 +11,7 @@ root.render(
     <div class="container">
       <section class="one">
         <h1>
-          First Page
+          <DigitalTimer1 />
         </h1>
       </section>
       <section class="two">
