@@ -10,15 +10,15 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Global techy background */
+/* Global background set to light (main content) */
 body {
-  background: linear-gradient(180deg, #071024 0%, #021226 100%);
-  color: #e6f0ff;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  color: #0f172a;
 }
 
 /* Links / accents */
 a {
-  color: #06b6d4;
+  color: #0369a1; /* darker cyan for accessibility */
 }
 
 /* Scroll reveal for avatar */

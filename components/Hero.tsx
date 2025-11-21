@@ -37,14 +37,14 @@ export const Hero: React.FC = () => {
           
           {/* Avatar / Image Placeholder */}
             <div ref={avatarRef} className="relative shrink-0 fade-in-up">
-            <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-secondary shadow-xl ring-2 ring-white/30 transition-transform duration-300 transform hover:scale-105 hover:-translate-y-1 hover:shadow-2xl motion-reduce:transform-none">
+            <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-xl ring-2 ring-primary/30 transition-transform duration-300 transform hover:scale-105 hover:-translate-y-1 hover:shadow-2xl motion-reduce:transform-none">
               <img
               src={PERSONAL_DETAILS.profileImage}
               alt={PERSONAL_DETAILS.name}
               className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute bottom-2 right-2 bg-secondary p-2 rounded-full shadow-lg text-white ring-2 ring-primary/20">
+            <div className="absolute bottom-2 right-2 bg-primary p-2 rounded-full shadow-lg text-white ring-2 ring-white/10">
                 <MapPin size={18} />
             </div>
           </div>
@@ -54,7 +54,7 @@ export const Hero: React.FC = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
               {PERSONAL_DETAILS.name}
             </h1>
-            <h2 className="text-xl md:text-2xl text-primary font-semibold mb-4 text-shadow text-slate-100">
+            <h2 className="text-xl md:text-2xl text-primary font-semibold mb-4">
               {PERSONAL_DETAILS.role}
             </h2>
             <p className="text-slate-300 text-lg leading-relaxed mb-6 max-w-2xl mx-auto md:mx-0">
@@ -68,7 +68,7 @@ export const Hero: React.FC = () => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 bg-secondary/80 border border-slate-700 rounded-full text-slate-100 hover:border-primary hover:text-primary transition-all shadow-sm hover:shadow"
+                  className="flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/10 rounded-full text-white hover:bg-primary/10 hover:text-primary transition-all shadow-sm hover:shadow"
                 >
                   {getIcon(link.platform)}
                   <span className="font-medium">{link.platform}</span>

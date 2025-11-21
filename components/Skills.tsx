@@ -4,27 +4,27 @@ import { Cpu, Trophy } from 'lucide-react';
 
 export const SkillsAndAwards: React.FC = () => {
   return (
-    <section id="skills" className="py-20 px-6">
+    <section id="skills" className="py-20 px-6 bg-white">
       <div className="container mx-auto max-w-5xl">
         
         {/* Skills */}
         <div className="mb-20">
           <div className="flex items-center gap-3 mb-10">
             <Cpu className="text-primary" size={28} />
-            <h2 className="text-3xl font-bold text-slate-700">Technical Skills</h2>
+            <h2 className="text-3xl font-bold text-slate-900">Technical Skills</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {SKILLS.map((category, index) => (
-              <div key={index} className="bg-secondary rounded-xl p-6 border border-slate-700">
-                <h3 className="font-bold text-lg text-white mb-4 border-b border-slate-700 pb-2">
+              <div key={index} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <h3 className="font-bold text-lg text-slate-900 mb-4 border-b border-slate-200 pb-2">
                   {category.category}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {category.items.map((skill) => (
                     <span 
                       key={skill} 
-                      className="px-3 py-1.5 bg-slate-700 border border-slate-700 rounded-lg text-sm text-slate-100 shadow-sm"
+                      className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm text-slate-700 shadow-sm"
                     >
                       {skill}
                     </span>
