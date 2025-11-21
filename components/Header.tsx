@@ -24,12 +24,12 @@ export const Header: React.FC = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
+        scrolled ? 'bg-secondary/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold text-primary tracking-tight">
-          Ting<span className="text-slate-900">HengNguan</span>
+        <a href="#" className="text-2xl font-bold text-primary tracking-tight text-slate-100">
+          Ting <span className="text-white">Heng Nguan</span>
         </a>
 
         {/* Desktop Nav */}
@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
             <a 
               key={item.label} 
               href={item.href}
-              className="text-sm font-medium text-slate-600 hover:text-primary transition-colors"
+              className="text-sm font-medium text-slate-300 hover:text-primary transition-colors"
             >
               {item.label}
             </a>
@@ -47,22 +47,21 @@ export const Header: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-slate-800"
+          className="md:hidden text-slate-200"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
-
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-slate-100 shadow-lg">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-secondary border-b border-slate-700 shadow-lg">
           <nav className="flex flex-col py-4">
             {navItems.map((item) => (
               <a 
                 key={item.label} 
                 href={item.href}
-                className="px-6 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary font-medium"
+                className="px-6 py-3 text-slate-200 hover:bg-secondary/80 hover:text-primary font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

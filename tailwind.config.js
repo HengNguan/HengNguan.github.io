@@ -7,10 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#1e40af', // Deep Blue from resume
-        secondary: '#1e293b', // Slate 800
-        accent: '#3b82f6', // Blue 500
-        background: '#f8fafc', // Slate 50
+        // Techy / neon palette
+        primary: '#06b6d4', // cyan (neon accent)
+        secondary: '#0f172a', // deep navy
+        accent: '#00ffd5', // neon teal
+        background: '#071024', // very dark navy
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

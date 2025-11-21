@@ -9,3 +9,34 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Global techy background */
+body {
+  background: linear-gradient(180deg, #071024 0%, #021226 100%);
+  color: #e6f0ff;
+}
+
+/* Links / accents */
+a {
+  color: #06b6d4;
+}
+
+/* Scroll reveal for avatar */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 500ms ease, transform 500ms cubic-bezier(.2,.8,.2,1);
+}
+.fade-in-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-up,
+  .fade-in-up.in-view {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
