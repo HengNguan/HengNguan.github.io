@@ -8,7 +8,7 @@ export const PERSONAL_DETAILS = {
   phone: "+65 8881 3304",
   location: "Singapore (PR) / Malaysian",
   about: "Active learner and self-motivated goal setter. Passionate communicator and collaborative team player who is emotionally attuned. Experienced in full-stack embedded development from kernel to application, with a strong foundation in Data Science and Electrical Engineering.",
-  profileImage: "./profile.jpg" // Ensure you add a file named profile.jpg to your project root
+  profileImage: "./asset/profile.jpg" // Ensure you add a file named profile.jpg to your project root
 };
 
 export const SOCIAL_LINKS: SocialLink[] = [
