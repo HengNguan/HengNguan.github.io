@@ -52,6 +52,7 @@ export const EXPERIENCE: Experience[] = [
       "Integrated llama.cpp with Vulkan backend to boost inference efficiency up to 50%.",
       "Simulated Android and Yocto Linux environments as a cloud-hosted digital twin on AWS, replicating full-stack hardware behavior (kernel to application).",
       "Bring-Up DisplayPort functionality on ARM SoC platform by implementing bootloader (U-Boot), kernel driver, and device tree modifications.",
+      "Maintained and improved the efficiency of CI/CD pipelines using Jenkins, for automation integration, testing and robust artifact deployment via JFrog Artifactory",
     ],
     techStack: ["HPC", "ADAS", "TFLite", "Ethos NPU", "Android", "Yocto Linux", "AWS", "U-Boot", "Kernel"]
   },
